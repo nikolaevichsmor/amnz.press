@@ -6,6 +6,11 @@
   <meta name="description" content="amnz.press — быстрый VPN с одной ссылкой для подключения на телефоне и компьютере.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://amnz.press/">
+  <script>
+    if (window.location.protocol === "http:") {
+      window.location.replace(`https://${window.location.host}${window.location.pathname}${window.location.search}${window.location.hash}`);
+    }
+  </script>
   <title>amnz.press — VPN без лишних настроек</title>
   <style>
     :root{--black:#0a0a0a;--white:#fff;--gray:#6a6a6a}
